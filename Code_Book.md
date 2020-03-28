@@ -3,7 +3,7 @@
 
 ## Description
 
-### Variables used:
+### Variables Used:
 
 1. packages: This variable is used to store the names of the packages used in the script
 2. path: It stores the absolute path to the current working directory which is being used by R
@@ -20,7 +20,7 @@
 13. testSubjects: It is a single-column dataset consisting of the subject-numbers who had been selected for the test dataset
 14. combined: It is the merged data frame formed by merging the "test" and the "training" data frames
 
-## data used:
+## Data Used:
 
 1. features.txt: A text file consisting of a list of the names of various features being measured in the dataset, and their corresponding indices
 2. activity_labels: A text file consisting of the list of activities considered in the dataset, along with their respcting level indices
