@@ -27,3 +27,15 @@
 3. X_train.txt and X_test.txt: A text file consisting of the measurement values for each of the features, and for each of the subjects selected for the training and test datasets, respectively
 4. Y_train.txt and Y_test.txt: A text file consisting of the list of activities for each of the measurements made for the training and test datasets, respectively
 5. tidyData.txt: The final dataset, consisting of the average of each of the feature-measurements, calculated on a per subject as well as a per activity basis
+
+## Transformations:
+
+1. The absolute path to the current working directory is first stored in the "path" variable.
+2. The zip file, consisting of the test and training datasets and the corresponding metadat, was downloaded into the file "dataFiles.zip", which was then unzipped, creating a directory named "UCI HAR Dataset" inside the current working directory.
+3. Inside the "activityLabels" variable, the "activity_labels.txt" file is extracted and stored as a data frame, with "classLabels" as the first variable-name, and "activityName" as the second variable name.
+4. Inside the "features" variable, the "features.txt" file is extracted and stored as a data frame, with "index" as the first variable-name, and "featureNames" as the second variable-name.
+5. In the "featuresWanted" variable, the indices of the feature-names in the "features" variable corresponding to the mean and standard deviation for each measured feature is stored.
+6. Then, using the "featuresWanted" variable as the row indices, the required feature-names from the "featureNames" variable in the "fectures" data frame are selected and stored as a character vector in the "measurements" variable.
+7. The "measurements" variable is further refined by removing the curved brackets present in all of the stored feature-names.
+8. In the "train" variable, the "X_train.txt" file, inside the "train" directory, is extracted, and only those columns corresponding to the "featuresWanted" variable are extracted.
+9. In the "test" variable, the "X_test.txt" file, inside the "test" directory, is extracted, and only those columns corresponding to the "featuresWanted" variable are extracted.
