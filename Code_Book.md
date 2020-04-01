@@ -40,5 +40,5 @@
 8. In `train`, the `X_train.txt` file, inside the `train` sub-directory, is extracted, and only those columns corresponding to the `featuresWanted` vector are extracted.
 9. In `test`, the `X_test.txt` file, inside the `test` sub-directory, is extracted, and only those columns corresponding to the `featuresWanted` vector are extracted.
 
-(_Note: The script is the intellectual property of [Mayank Galarnyk](https://github.com/mGalarnyk)  
+(_Note: The R script used in this project is the intellectual property of [Mayank Galarnyk](https://github.com/mGalarnyk)  
 Link to the original script: [`run_analysis.R`](https://github.com/mGalarnyk/datasciencecoursera/blob/master/3_Getting_and_Cleaning_Data/projects/run_analysis.R)_)
